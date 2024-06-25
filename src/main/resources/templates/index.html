@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SBA</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <script src="../static/js/index.js"></script>
+    <style>
+        #sba {
+            font-size: 1.6rem;
+        }
+    </style>
+</head>
+<body class="light">
+    <header>
+        <div class="nav-container">
+            <div id="sba">SBA</div>
+            <nav class="l-nav">
+                <ul>
+                    <li><a>home</a></li>
+                    <li><a>dashboard</a></li>
+                    <li><a>login/signup</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu" onclick="toggleActive()">
+                <div class="hamburger"></div>
+                <nav class="s-nav">
+                    <ul class="light">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="index.html">dashboard</a></li>
+                        <li><a href="login.html">login/signup</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="light">
+        <section>
+            <h2 style="font-size: 3.6rem; font-family: Berkshire Swash,serif;">
+                Plan Your Private Events with Ease
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, alias aperiam
+                architecto corporis culpa dolor doloremque dolores doloribus facilis id ipsam ipsum
+                laboriosam molestiae mollitia necessitatibus nihil nobis, placeat quisquam quos saepe
+                sequi similique ullam vitae voluptate voluptatibus! Ab accusantium asperiores
+                consectetur debitis delectus deserunt dolor dolorem eveniet facilis impedit incidunt
+                inventore itaque labore maiores minima minus molestias
+            </p>
+        </section>
+        <section>
+            <h3>
+                Why Choose Us?
+            </h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Efficiency:</th>
+                        <td>Save time with our streamlined planning tools.</td>
+                    </tr>
+                    <tr>
+                        <th>Customization:</th>
+                        <td>Tailor each event to your specific needs.</td>
+                    </tr>
+                    <tr>
+                        <th>Comprehensive Tools:</th>
+                        <td>From guest list management to detail planning, our tools cover all your event planning needs.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <label for="mode"></label>
+                <select id="mode" onchange="changeMode(this.value)">
+                    <option value="light">light</option>
+                    <option value="dark">dark</option>
+                    <option value="blue">blue</option>
+                </select>
+        </section>
+    </main>
+</body>
+</html>
